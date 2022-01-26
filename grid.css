@@ -1,0 +1,65 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #080831;
+    overflow-y: hidden;
+}
+i
+{
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marvel', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marvel', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+.diamond-grid
+{
+    width: 70%;
+    margin: 150px auto 0;
+}
+.item
+{
+    width: 220px;
+    height: 220px;
+    background:  #080831;
+    opacity: 0.5;
+    transition: 0.5s;
+    transform: perspective(600px) rotateX(20deg);
+}
+.item:hover
+{
+    opacity: 1;
+    filter: brightness(120%);
+    transform: scale(1.5);
+    
+}
+.item img
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(1.5);
+    width: 100%;
+}
+@media (max-width: 767px)
+{
+    .diamond-grid
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
